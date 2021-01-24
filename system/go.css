@@ -263,6 +263,18 @@ ul#nls {
   font-size: 0.9em;
 }
 
+.action_link {
+  color: #BBBBBB;
+  border-width: 0px;
+  cursor:pointer;
+  background-color: #555555;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1px 2px 1px 2px;
+  margin: 0px 1px 0px 1px;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
 .action_item input:hover, .action_item input:focus {
   color: #FFFFFF;
   background-color: #777777;

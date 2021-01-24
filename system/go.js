@@ -484,6 +484,9 @@ function html_loadControlsBar(go_room, go_file, access, mode, last_move, board_c
   txt += " "
  }
 
+ txt += "<a class=\"action_link\" href=\"../system/sgf.php?room=" + document.go.global_go_room + "&file=" + document.go.global_go_file + "\" target=\"sgf\">SGF</a>"
+ txt += " "
+
  // old games
  if(mode != "simulate") {
   txt += "<form class=\"action_item\" onsubmit='return false'>"
