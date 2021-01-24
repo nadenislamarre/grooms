@@ -1,0 +1,537 @@
+
+/* Grooms */
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------------
+          General
+--------------------------*/
+
+body {
+  background-color: #555555;
+  background: url(homepage/bg.jpg) repeat;
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+  text-align: center;
+  font: 14px/1.3 'Segoe UI Light', Arial, sans-serif;
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+a {
+  color: #0099B5;
+}
+
+/*-------------------------
+	   Home
+--------------------------*/
+
+div#topMessage {
+  background: #0099B5;
+  color: #222222;
+  margin-bottom: 1em;
+}
+
+div#topMessage a {
+  color: #EEEEEE;
+}
+
+header {
+  background: #191919;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 3.2em;
+  margin: 0 0 40px 0;
+  padding: 10px 0;
+}
+
+div#information {
+ float: left;
+ width: 30%;
+ margin: 0 auto;
+}
+
+div#description {
+ float: left;
+ width: 69%; /* because ie is not so precise */
+ margin: 0 auto;
+}
+
+section#content div#picture {
+ margin: 10px;
+}
+
+section#content div#picture img {
+  border: 2px #222222 solid;
+  max-width: 90%;
+}
+
+section#content div#show_all_rooms {
+  text-align: right;
+}
+
+section#content h2 {
+  font-size: 1.3em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+section#content ul {
+  margin: 0 0 10px 20px;
+}
+
+section#content div#rooms {
+  text-align: left;
+  color: #eee;
+  background: #222222;
+  max-width: 500px;
+  margin: 10px;
+  padding: 10px;
+}
+
+section#content div#project {
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto 20px 30px;
+  padding: 10px;
+}
+
+section#content div#features {
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto 20px 30px;
+  padding: 10px;
+}
+
+section#content div#create {
+  color: #eee;
+  background: #0099B5;
+  margin: 0 auto 20px auto;
+  padding: 10px 0;
+}
+
+section#content div#create h2 {
+  font-size: 1.2em;
+}
+
+section#content div#create form input[type=text], input[type=password] {
+  border: 2px solid #DDDDDD;
+  padding: 2px;
+  width: 120px;
+  font-size: 0.9em;
+}
+
+section#content div#create form input[type=text]:focus, input[type=password]:focus {
+  border-color: #E64135;
+}
+
+section#content form label {
+    font-weight: bold;
+    margin: 0 4px 0 16px;
+    font-size: 0.9em;
+}
+
+section#content div#create form input[type="submit"] {
+    background: none repeat scroll 0 0 #F3F3F3;
+    border: 1px solid #DCDCDC;
+    border-radius: 2px 2px 2px 2px;
+    color: #6E6E6E;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left:20px;
+    padding: 2px 6px;
+    position: relative;
+    text-shadow: 0 1px 0 #FFFFFF;
+    transition: border-color 0.218s ease 0s;
+}
+
+section#content div#create form input[type="submit"]:hover {
+    border-color: #999999;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #333333;
+}
+
+section#content div#create form input[type="submit"]:active {
+    border-color: #444444;
+    color: #000000;
+}
+
+section#content div#faq {
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto 20px 30px;
+  padding: 10px;
+}
+
+section#content div#faq li {
+  list-style: none;
+}
+
+footer {
+  color: #AAAAAA;
+  background: #191919;
+  padding: 10px 0 30px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+ul#nls {
+  list-style-type: none;
+  text-align: right;
+  padding-right: 1em;
+}
+
+#nls li {
+  display: inline;
+  padding-right: 5px;
+}
+
+#nls li a {
+  color: #AAAAAA;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+#nls li a:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------
+           Room
+--------------------------*/
+
+.clear {
+  width: 100%;
+  height: 1px;
+  margin: 0 0 -1px;
+  clear: both;
+}
+
+.loading {
+ font-size: 2em;
+ text-align: center;
+ margin: 2em;
+}
+
+#board_loginbar {
+}
+
+.login_form {
+ margin-left: 1em;
+ text-align: left;
+}
+
+.board_img {
+}
+
+#error_bar {
+ background-color: white;
+ color: red;
+ font-size: 0.9em;
+}
+
+.faq_section {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 0.8em;
+}
+
+.action_item {
+  display: inline;
+}
+
+.action_item input {
+  color: #BBBBBB;
+  border-width: 0px;
+  cursor:pointer;
+  background-color: #555555;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1px 2px 1px 2px;
+  margin: 0px 1px 0px 1px;
+  font-size: 0.9em;
+}
+
+.action_item input:hover, .action_item input:focus {
+  color: #FFFFFF;
+  background-color: #777777;
+}
+
+.system_controls {
+ margin-top: 1em;
+}
+
+.actiongame_item {
+  display: inline;
+}
+
+.actiongame_item input {
+  color: #BBBBBB;
+  border-color: #000000;
+  cursor:pointer;
+  background-color: #555555;
+  border-radius: 15px 15px 15px 15px;
+  padding: 1px 4px 1px 4px;
+}
+
+.actiongame_item input:hover, .action_item input:focus {
+  color: #FFFFFF;
+  background-color: #777777;
+}
+
+.system_controls {
+ text-align: right;
+}
+
+.action_bar {
+  margin-top: 3px;
+}
+
+.infos_bar {
+  text-align: center;
+  background: #191919;
+  margin-top: 3px;
+}
+
+span.highlight {
+  color: #0099B5;
+}
+
+.infos_column_bar {
+}
+
+.infos_turn_black {
+  font-weight: bold;
+  font-size: 1.6em;
+  background: #191919;
+  color: #EEEEEE;
+  padding: 0 27px;
+  width: 145px;
+  white-space: nowrap;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.infos_turn_white {
+  font-weight: bold;
+  font-size: 1.6em;
+  background: #999999;
+  color: #191919;
+  padding: 0 27px;
+  width: 145px;
+  white-space: nowrap;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.hidden_area {
+  display: none;
+}
+
+.form_tosend input, .form_tosend textarea, .form_tosend select {
+  background-color: #EEEEEE;
+  border-width: 2px;
+  border-color: #000;
+  border-style: solid;
+  color: #000;
+  border-radius: 5px 5px 5px 5px;
+  padding: 1px 4px 1px 4px;
+}
+
+.form_tosend input:focus, .form_tosend textarea:focus, .form_tosend select:focus {
+  border-color: #E64135;
+}
+
+.form_tosend input {
+  background-color: #EEEEEE;
+}
+
+.reset_area {
+  text-align: right;
+  margin: 0.3em;
+}
+
+.old_games_area {
+  text-align: right;
+  margin: 0.3em;
+}
+
+.comment_area {
+  text-align: center;
+  margin: 0.3em;
+}
+
+.comment_author {
+  color: #0099B5;
+}
+
+.board_areas {
+}
+
+.board_comments {
+  background-color: #222222;
+  color: #EEEEEE;
+  padding: 0.5em;
+  margin: 1.5em;
+  text-align: left;
+  display: none;
+}
+
+.comment_visible {
+}
+
+.comment_hidden {
+  font-weight: bold;
+}
+
+.board {
+ padding: 1px 0;
+}
+
+.board_letters {
+  color:#A75;
+  font-size: 0.9em;
+}
+
+.scores_bar {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.scores_bar table {
+  background-color: #777777;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.scores_bar th {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.scores_bar td {
+  border-style: solid;
+  border-width: 0px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.scores_basic_title {
+  font-size: 0.8em;
+}
+
+.scores_score_title {
+  color: #550000;
+  font-size: 1.0em;
+}
+
+.scores_basic_value {
+  font-size: 0.8em;
+}
+
+.scores_score_value {
+  font-size: 1.0em;
+  font-weight: bold;
+  color: #990000;
+}
+
+.scores_score_value_delta {
+  font-size: 0.6em;
+}
+
+.history_bar {
+  text-align: center;
+  background-color: #191919;
+}
+
+.history_bar form {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.history_bar input {
+  font-size: 0.8em;
+  color: #881111;
+  margin-bottom: 0.3em;
+  margin-top: 0.2em;
+  background: #999999;
+  border-style: solid;
+  border-size: 1px;
+  border-color: #777777;
+  border-radius: 5px;
+}
+
+.history_bar input:hover, .history_bar input:focus {
+  color: #FFFFFF;
+  background: #777777;
+  border-color: #555555;
+}
+
+.points_black {
+  color: #EEEEEE;
+}
+
+.points_white {
+  color: #222222;
+}
+
+.go_file_name {
+  margin-bottom: 0em;
+  margin-left: 0em;
+  margin-right: 0em;
+  margin-top: 0.3em;
+  padding: 0em;
+  color: #FFAA22;
+  font-size: 0.9em;
+}
+
+.simulation {
+  color: #FFFF44;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/*-------------------------
+	Admin
+--------------------------*/
+
+form#configure_options {
+  margin: 1em;
+}
+
+.form_left {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  text-align: right;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+.form_right {
+  display: inline-block;
+  width: 45%;
+  margin: 0 auto;
+  text-align: left;
+  margin-left: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+.warning {
+ color: #FF8800;
+ background-color: #FFFF33;
+ font-weight: bold;
+}
